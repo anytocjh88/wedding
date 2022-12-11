@@ -9756,7 +9756,7 @@ body {
 
 /* Home Page Style */
 .ww-home-page {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/main-background.jpeg") no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url("../images/main-background.jpg") no-repeat center center;
     background-size: cover;
     background-position: 50%;
     height: 100vh;
@@ -9770,7 +9770,7 @@ body {
     height: 140%;
     text-align: center;
     color: #fff;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.8);
     letter-spacing: 2px;
 }
 
@@ -9804,7 +9804,6 @@ body {
 
 .ww-home-page:before {
     content: "";
-    background-color: rgba(245, 138, 119, 0.2);
     width: 100%;
     height: 100%;
     height: 100vh;
@@ -10031,7 +10030,7 @@ body {
 }
 
 .ww-section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .btn-primary {
@@ -10058,4 +10057,52 @@ body {
     bottom: 0;
     left: 0;
     margin: 0px 15px 15px 15px;
+}
+
+#insa_family_tbl {
+    border-spacing: 0 10px;
+}
+#insa_family_tbl {
+    margin: 0 auto;
+    border-spacing: 0 10px;
+}
+
+.insa_parent_block {
+    padding-right: 5px;
+}
+.insa_parent_block {
+    padding-right: 5px;
+    text-align: right;
+}
+
+.insa_rel_block, .insa_ord_block {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.family_member_b1 .contact_icon_block {
+    background-color: #fec4c5;
+}
+
+.contact_tel_img {
+    background-image: url(../images/icon_contact_white_tel.png);
+    background-repeat: no-repeat;
+    background-size: 15px 16px;
+    background-position: center;
+}
+
+.contact_icon_block {
+    height: 35px;
+    width: 35px;
+    background-color: #fcdfd8;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contact_msg_img {
+    background-image: url(../images/icon_contact_white_msg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 15px;
 }
