@@ -6276,7 +6276,9 @@ button.close {
     width: 15%;
     color: #fff;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.8;
+	background: 0, 0;
+	border: 0;
 }
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
@@ -6301,7 +6303,8 @@ button.close {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: transparent no-repeat center center;
+    #background: transparent no-repeat center center;
+	background: gray;
     background-size: 100% 100%;
 }
 
@@ -10030,7 +10033,7 @@ body {
 }
 
 .ww-section {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 .btn-primary {
@@ -10094,7 +10097,7 @@ body {
 .contact_icon_block {
     height: 35px;
     width: 35px;
-    background-color: #fcdfd8;
+    background-color: #c5d3ec;
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
@@ -10105,4 +10108,34 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 15px;
+}
+
+.contact_row {
+    display: flex;
+    border-bottom: 1px solid #998675;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+.contact_row li:first-child {
+    width: 50%;
+}
+
+.contact_row > li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.contact_row > li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.name_block, .name_block > span {
+    font-size: 13px;
+}
+
+.family_member_b1 .contact_icon_block {
+    background-color: #fec4c5;
 }
