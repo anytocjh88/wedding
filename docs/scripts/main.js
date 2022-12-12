@@ -35,6 +35,24 @@ document.addEventListener( 'DOMContentLoaded', function () {
   main.sync( thumbnails );
   main.mount();
   thumbnails.mount();
+  
+  var clipboard1 = new ClipboardJS('.btn-modal-a', {
+		container: document.getElementById('modal_a')
+	});
+
+	clipboard1.on('success', function(e) {
+		alert(e.text + ' 복사되었습니다');
+		e.clearSelection();
+	});
+	
+	var clipboard2 = new ClipboardJS('.btn-modal-b', {
+		container: document.getElementById('modal_b')
+	});
+
+	clipboard2.on('success', function(e) {
+		alert(e.text + ' 복사되었습니다');
+		e.clearSelection();
+	});
 } );
 
 // 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
