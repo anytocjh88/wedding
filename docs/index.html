@@ -278,11 +278,11 @@
 					<div class="h3 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif; font-size:1.5em">축하의 마음 전하기</div>
                     <div class="row">
 						<div class="col">
-							<div class="mt-4 text-center" data-toggle="modal" data-target="#modal_a" style="margin-left:18px; margin-right:18px; font-family: 'Noto Serif KR', serif; font-size:1.0em; text-decoration:underline;">
-								신랑측 계좌번호 확인
+							<div class="mt-4 text-center" style="margin-left:18px; margin-right:18px; font-family: 'Noto Serif KR', serif; font-size:1.0em; text-decoration:underline;">
+								<button type="button" data-toggle="modal" data-target="#modal_a" class="btn btn-light px-4 py-3" style="background-color: #eeeeee;">신랑측 계좌번호 확인</button>
 							</div>
-							<div class="text-center" data-toggle="modal" data-target="#modal_b" style="margin-left:18px; margin-right:18px; font-family: 'Noto Serif KR', serif; font-size:1.0em; text-decoration:underline;">
-								신부측 계좌번호 확인
+							<div class="text-center mt-3" style="margin-left:18px; margin-right:18px; font-family: 'Noto Serif KR', serif; font-size:1.0em; text-decoration:underline;">
+								<button type="button" data-toggle="modal" data-target="#modal_b" class="btn btn-light px-4 py-3" style="background-color: #eeeeee;">신부측 계좌번호 확인</button>
 							</div>
 						</div>
 					</div>
@@ -293,62 +293,110 @@
     </div>
 </div>
 </div>
-<div class="modal fade" id="modal_a" tabindex="-1" aria-labelledby="modal_a" aria-hidden="true" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+<div class="modal fade" id="modal_a" tabindex="-1" aria-labelledby="modal_a" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal_a_label">신랑측 계좌번호</h5>
+        <h5 class="modal-title" id="modal_a_label" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">신랑측 계좌번호</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <table class="table table-bordered">
-		  <tbody>
-			<tr>
-			  <td>신랑 채장희</td>
-			  <td>신한은행<br>110-219-414723</td>
-			</tr>
-			<tr>
-			  <td>혼주 채일근</td>
-			  <td>신한은행<br>110-005-496705</td>
-			</tr>
-			<tr>
-			  <td>혼주 김지숙</td>
-			  <td>국민은행<br>46350101224474</td>
-			</tr>
-		  </tbody>
-		</table>
+		<h5 class="modal-title mb-3" id="modal_a_label" style="font-family: 'Noto Serif KR', serif; font-size:0.9em; color:#333333">복사 버튼 클릭시, 계좌 번호가 복사됩니다.</h5>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; border-bottom:1px solid #333333">
+			<div class="col font-weight-bold">
+				신랑 채장희
+			</div>
+			<div class="col text-right">
+				<button type="button" class="btn btn-secondary btn-sm" onclick=copyToClipBoard('110219414723')>복사하기</button>
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+			<div class="col mb-5">
+				신한은행 110-219-414723
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; border-bottom:1px solid #333333">
+			<div class="col font-weight-bold">
+				혼주 채일근
+			</div>
+			<div class="col text-right">
+				<button type="button" class="btn btn-secondary btn-sm" onclick=copyToClipBoard('110005496705')>복사하기</button>
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+			<div class="col mb-5">
+				신한은행 110-005-496705
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; border-bottom:1px solid #333333">
+			<div class="col font-weight-bold">
+				혼주 김지숙
+			</div>
+			<div class="col text-right">
+				<button type="button" class="btn btn-secondary btn-sm" onclick=copyToClipBoard('46350101224474')>복사하기</button>
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+			<div class="col mb-5">
+				국민은행 46350101224474
+			</div>
+		</div>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="modal_b" tabindex="-1" aria-labelledby="modal_b" aria-hidden="true" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+<div class="modal fade" id="modal_b" tabindex="-1" aria-labelledby="modal_b" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal_b_label">신부측 계좌번호</h5>
+        <h5 class="modal-title" id="modal_b_label" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">신부측 계좌번호</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-		<table class="table table-bordered">
-		  <tbody>
-			<tr>
-			  <td>신부 조성연</td>
-			  <td>신한은행<br>110-350-557722</td>
-			</tr>
-			<tr>
-			  <td>혼주 조남용</td>
-			  <td>하나은행<br>223-910037-48808</td>
-			</tr>
-			<tr>
-			  <td>혼주 박효숙</td>
-			  <td>농협<br>352-1618-1809-03</td>
-			</tr>
-		  </tbody>
-		</table>
+	  <div class="modal-body">
+		<h5 class="modal-title mb-3" id="modal_a_label" style="font-family: 'Noto Serif KR', serif; font-size:0.9em; color:#333333">복사 버튼 클릭시, 계좌 번호가 복사됩니다.</h5>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; border-bottom:1px solid #333333">
+			<div class="col font-weight-bold">
+				신부 조성연
+			</div>
+			<div class="col text-right">
+				<button type="button" class="btn btn-secondary btn-sm" onclick=copyToClipBoard('110350557722')>복사하기</button>
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+			<div class="col mb-5">
+				신한은행 110-350-557722
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; border-bottom:1px solid #333333">
+			<div class="col font-weight-bold">
+				혼주 조남용
+			</div>
+			<div class="col text-right">
+				<button type="button" class="btn btn-secondary btn-sm" onclick=copyToClipBoard('22391003748808')>복사하기</button>
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+			<div class="col mb-5">
+				하나은행 223-910037-48808
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; border-bottom:1px solid #333333">
+			<div class="col font-weight-bold">
+				혼주 박효숙
+			</div>
+			<div class="col text-right">
+				<button type="button" class="btn btn-secondary btn-sm" onclick=copyToClipBoard('3521618180903')>복사하기</button>
+			</div>
+		</div>
+		<div class="row mx-2 py-2" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+			<div class="col mb-5">
+				농협 352-1618-1809-03
+			</div>
+		</div>
       </div>
     </div>
   </div>
