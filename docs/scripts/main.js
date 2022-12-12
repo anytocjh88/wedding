@@ -14,4 +14,27 @@ function copyToClipBoard(str) {
 	});
 }
 
+document.addEventListener( 'DOMContentLoaded', function () {
+  var main = new Splide( '#main-carousel', {
+    type      : 'fade',
+    rewind    : true,
+    pagination: false,
+    arrows    : false,
+  } );
+
+  var thumbnails = new Splide( '#thumbnail-carousel', {
+    fixedWidth  : 100,
+    fixedHeight : 120,
+    gap         : 10,
+    rewind      : true,
+    pagination  : false,
+    isNavigation: true,
+    arrows    : true
+  } );
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+} );
+
 // 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
